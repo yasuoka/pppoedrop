@@ -29,6 +29,7 @@
 #include <errno.h>
 #include <sysexits.h>
 #include <stdarg.h>
+#include <time.h>
 #include <err.h>
 #include <string.h>
 #include <unistd.h>
