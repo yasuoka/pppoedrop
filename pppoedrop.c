@@ -145,7 +145,7 @@ main(int argc, char *argv[])
 	while (poll(pfd, 1, 0) == 0) {
 		sz = read(bpf, buf, sizeof(buf));
 		if (sz <= 0)
-			err(EX_OSERR, "read %d", sz);
+			err(EX_OSERR, "read %zd", sz);
 		pkt = buf;
 		while (sz > 0) {
 			if (sz < sizeof(*bhdr))
